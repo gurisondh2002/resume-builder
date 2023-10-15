@@ -15,7 +15,7 @@ app.use(express.urlencoded({extended:true}));
 
 // app.use(express.static("../client/build"));
 
-app.post("/create-pdf", (req, res) => {
+app.post("/form/create-pdf", (req, res) => {
     pdf.create(pdfSample(req.body), {}).toFile("Resume.pdf", (err) => {
       if (err) {
         res.send(Promise.reject());
@@ -26,7 +26,7 @@ app.post("/create-pdf", (req, res) => {
     });
   });
   
-  app.get("/fetch-pdf", (req, res) => {
+  app.get("/form/fetch-pdf", (req, res) => {
     res.sendFile(`${__dirname}/Resume.pdf`);
   });
   

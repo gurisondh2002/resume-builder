@@ -37,11 +37,6 @@ function Form() {
     edu1_school: "",
     edu1_year: "",
     edu1_qualification: "",
-    edu1_desc: "",
-    edu2_school: "",
-    edu2_year: "",
-    edu2_qualification: "",
-    edu2_desc: "",
 
     extra_1: "",
     extra_2: "",
@@ -82,8 +77,8 @@ function Form() {
 
   const handleNextPage = () =>{
     if(page === FormTitle.length - 1){
-      axios.post("http://localhost:3000/create-pdf", formData).then(() =>
-        axios.get("http://localhost:3000/fetch-pdf",{
+      axios.post("http://localhost:3000/form/create-pdf", formData).then(() =>
+        axios.get("http://localhost:3000/form/fetch-pdf",{
           responseType :"blob",
         })
       ).then((res) =>{
