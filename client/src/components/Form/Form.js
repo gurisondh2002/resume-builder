@@ -6,6 +6,7 @@ import Personal from '../Personal/Personal'
 import Project from '../Project/Project'
 import axios from "axios"
 import {saveAs} from 'file-saver'
+import styles from './Form.module.css'
 
 function Form() {
 
@@ -96,13 +97,13 @@ function Form() {
     }
   }
   return (
-    <div>
+    <div className={`${styles.mainContainer}`}>
       <h1>{FormTitle[page]}</h1>
       <div>
         {PageDisplay()}
       </div>
-      <div>
-        <button disabled={page === 0} onClick={handlePrevPage}>Prev</button>
+      <div className={`${styles.buttonContainer}`}>
+        <button className={`${styles.prevButton}`}disabled={page === 0} onClick={handlePrevPage}>Prev</button>
         <button onClick={handleNextPage}>{page === FormTitle.length - 1 ? "Download PDF" : "Next" }</button>
       </div>
       {success}

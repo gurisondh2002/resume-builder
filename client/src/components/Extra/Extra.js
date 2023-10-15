@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './Extra.module.css'
 
 function Extra({formData, setFormData}) {
   return (
-    <div>
+    <div className={`${styles.mainContainer}`}>
       <form>
         <h3>Languages you can speak:</h3>
         <div>

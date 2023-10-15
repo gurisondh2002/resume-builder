@@ -69,7 +69,7 @@ module.exports = ({
                   <div class="col-lg-6">
                       <h1><b>${name}</b></h1>
                       <p class="lead email"><strong>Email:</strong> ${email}</p>
-                      <p class="lead"><strong>Contact:</strong> (+92)${phone}</p>
+                      <p class="lead"><strong>Contact:</strong> (+91)${phone}</p>
                       <p class="lead"><strong>LinkedIn:</strong> ${linkedin}</p>
                       <p class="lead"><strong>Github:</strong> ${github}</p>
                   </div>    

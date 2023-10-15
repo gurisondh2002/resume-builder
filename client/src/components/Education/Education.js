@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './Education.module.css'
 
 function Education({formData, setFormData}) {
   return (
-    <div>
+    <div className={`${styles.mainContainer}`}>
         <form>
             <div>
                 <label>Enter your institue name:</label>

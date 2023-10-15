@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './Experience.module.css'
 
 function Experience({formData, setFormData}) {
   return (
-    <div>
+    <div className={`${styles.mainContainer}`}>
     <form>
         <div>
             <label>Enter your first company name you worked for:</label>

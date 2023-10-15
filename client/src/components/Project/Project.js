@@ -1,8 +1,9 @@
 import React from 'react'
+import styles  from './Project.module.css'
 
 function Project({ formData, setFormData }) {
   return (
-    <div>
+    <div className={`${styles.mainContainer}`}>
       <form>
         <div>
           <label>Name of Project:</label>
