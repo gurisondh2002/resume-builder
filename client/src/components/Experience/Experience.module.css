@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: 'black';
 }
 .mainContainer form{
     display: flex;
